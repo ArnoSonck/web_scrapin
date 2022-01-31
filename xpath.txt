@@ -1,0 +1,9 @@
+$x('//div[@Class="news V_Title_Img"]/h2/a/@href').map(x => x.value) 
+$x('//div[@class="mb-auto"]/h2/span/text()').map(x => x.wholeText)
+$x('//div[@class="lead"]/p/text()').map(x => x.wholeText)
+$x('//div[@class="html-content"]/p[not(@class)]/text()').map(x => x.wholeText)
+
+Links = //div[@Class="news V_Title_Img"]/h2/a/@href
+Titles = //div[@class="mb-auto"]/h2/span/text()
+Summary = //div[@class="lead"]/p/text()
+Body = //div[@class="html-content"]/p[not(@class)]/text()
